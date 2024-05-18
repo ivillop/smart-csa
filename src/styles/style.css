@@ -52,8 +52,8 @@ main {
   flex-direction: column;
   gap: 2rem;
   background-color: #bec8d0;
-  padding-block: 2rem;
-  padding-inline: 2rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
   margin-top: 2rem;
   margin-left: 20%;
 }
@@ -64,13 +64,33 @@ main {
   gap: 0.5rem;
 }
 
+.dashboard {
+  display: flex;
+  gap: 2rem;
+}
+
 .peminjaman-ruangan {
   background-color: #fff;
   border-radius: 16px;
-  padding: 2rem;
+  width: 40rem;
+  padding: 1rem;
+  color: #828282;
+}
+
+.time-peminjaman {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-peminjaman {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .peminjaman-list {
+  padding-left: 1rem;
   padding-top: 1rem;
   display: flex;
   gap: 1rem;
@@ -88,7 +108,6 @@ main {
 }
 
 .peminjaman-date {
-  width: 30rem;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -108,10 +127,85 @@ main {
   gap: 0.5rem;
 }
 
+.time-description p:first-child {
+  color: #32936f;
+}
+
 .date-description {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.date-description p:first-child {
+  color: #32936f;
+}
+
+.agenda-acara {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  gap: 1rem;
+}
+
+.agenda-acara h1 {
+  font-size: 24px;
+}
+
+.agenda-acara__blue {
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #5570f1;
+}
+
+.agenda-acara__gray {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ffffff9e;
+}
+
+.agenda-acara__title {
+  padding-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.agenda-acara__blue .agenda-acara__icon {
+  border-radius: 10px;
+  background-color: #ffffff40;
+  padding: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.agenda-acara__gray .agenda-acara__icon {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.agenda-acara__description {
+  display: flex;
+  gap: 7rem;
+}
+
+.agenda-acara__date,
+.agenda-acara__active {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.agenda-acara__date p:first-child,
+.agenda-acara__active p:first-child {
+  font-size: 14px;
+}
+
+.agenda-acara__date p:nth-child(2),
+.agenda-acara__active p:nth-child(2) {
+  font-size: 20px;
 }
 
 .status-surat {

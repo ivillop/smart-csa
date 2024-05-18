@@ -1,12 +1,22 @@
 import DataTable from 'datatables.net-dt';
 import profile from '../assets/profile.png';
 import { useEffect } from 'react';
-import { FaRegClock, FaRegCalendarDays, FaCircleCheck } from 'react-icons/fa6';
+import {
+  FaRegClock,
+  FaRegCalendarDays,
+  FaCircleCheck,
+  FaFolderMinus,
+} from 'react-icons/fa6';
 
 function Dashboard() {
   useEffect(() => {
     // Initialize DataTables
-    const table = new DataTable('#dashboard');
+    const table = new DataTable('#dashboard', {
+      language: {
+        search: '_INPUT_',
+        searchPlaceholder: 'Search',
+      },
+    });
 
     // Cleanup on component unmount
     return () => {
@@ -16,49 +26,94 @@ function Dashboard() {
 
   return (
     <main>
-      <div className='peminjaman-ruangan'>
-        <h1>Peminjaman Ruangan</h1>
-        <div className='peminjaman-list'>
-          <img src={profile} alt='profile' />
-          <div className='peminjaman-description'>
-            <p>Ruang 107</p>
-            <p>@Aria</p>
-          </div>
-          <div className='peminjaman-date'>
-            <FaRegClock />
-            <div className='time-description'>
-              <p>Time</p>
-              <p>12.00 PM</p>
+      <div className='dashboard'>
+        <div className='agenda-acara'>
+          <div className='agenda-acara__blue'>
+            <div className='agenda-acara__title'>
+              <div className='agenda-acara__icon'>
+                <FaFolderMinus />
+              </div>
+              <h1>Agenda Acara</h1>
             </div>
-            <FaRegCalendarDays />
-            <div className='date-description'>
-              <p>Date</p>
-              <p>12/12/2022</p>
+            <div className='agenda-acara__description'>
+              <div className='agenda-acara__date'>
+                <p>Date</p>
+                <p>12/12/2024</p>
+              </div>
+              <div className='agenda-acara__active'>
+                <p>Active</p>
+                <p>32</p>
+              </div>
             </div>
           </div>
-          <FaCircleCheck size={'40px'} color={'#006769'} />
+          <div className='agenda-acara__gray'>
+            <div className='agenda-acara__title'>
+              <div className='agenda-acara__icon'>
+                <FaFolderMinus />
+              </div>
+              <h1>Agenda Acara</h1>
+            </div>
+            <div className='agenda-acara__description'>
+              <div className='agenda-acara__date'>
+                <p>Date</p>
+                <p>12/12/2024</p>
+              </div>
+              <div className='agenda-acara__active'>
+                <p>Active</p>
+                <p>32</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='peminjaman-list'>
-          <img src={profile} alt='profile' />
-          <div className='peminjaman-description'>
-            <p>Ruang 107</p>
-            <p>@Aria</p>
-          </div>
-          <div className='peminjaman-date'>
-            <FaRegClock />
-            <div className='time-description'>
-              <p>Time</p>
-              <p>12.00 PM</p>
+        <div className='peminjaman-ruangan'>
+          <h1>Peminjaman Ruangan</h1>
+          <div className='peminjaman-list'>
+            <img src={profile} alt='profile' />
+            <div className='peminjaman-description'>
+              <p>Ruang 107</p>
+              <p>@Aria</p>
             </div>
-            <FaRegCalendarDays />
-            <div className='date-description'>
-              <p>Date</p>
-              <p>12/12/2022</p>
+            <div className='peminjaman-date'>
+              <div className='time-peminjaman'>
+                <FaRegClock />
+                <div className='time-description'>
+                  <p>Time</p>
+                  <p>12.00 PM</p>
+                </div>
+              </div>
+              <div className='date-peminjaman'>
+                <FaRegCalendarDays />
+                <div className='date-description'>
+                  <p>Date</p>
+                  <p>12/12/2022</p>
+                </div>
+              </div>
             </div>
+            <FaCircleCheck size={'40px'} color={'#006769'} />
           </div>
-          <FaCircleCheck size={'40px'} color={'#006769'} />
+          <div className='peminjaman-list'>
+            <img src={profile} alt='profile' />
+            <div className='peminjaman-description'>
+              <p>Ruang 107</p>
+              <p>@Aria</p>
+            </div>
+            <div className='peminjaman-date'>
+              <FaRegClock />
+              <div className='time-description'>
+                <p>Time</p>
+                <p>12.00 PM</p>
+              </div>
+              <FaRegCalendarDays />
+              <div className='date-description'>
+                <p>Date</p>
+                <p>12/12/2022</p>
+              </div>
+            </div>
+            <FaCircleCheck size={'40px'} color={'#006769'} />
+          </div>
         </div>
       </div>
+
       <div className='status-surat'>
         <h1>Status Surat</h1>
         <table id='dashboard' className='display' style={{ width: '100%' }}>

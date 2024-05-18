@@ -6,7 +6,12 @@ import { FaPlus } from 'react-icons/fa6';
 
 function Surat() {
   useEffect(() => {
-    const table = new DataTable('#surat');
+    const table = new DataTable('#surat', {
+      language: {
+        search: '_INPUT_',
+        searchPlaceholder: 'Search',
+      },
+    });
 
     return () => {
       table.destroy(false);

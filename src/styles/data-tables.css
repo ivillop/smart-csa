@@ -639,9 +639,10 @@ div.dt-container div.dt-layout-cell:empty {
   display: none;
 }
 div.dt-container .dt-search input {
+  height: 40px;
+  padding-left: 1rem;
   border: 1px solid #aaa;
-  border-radius: 3px;
-  padding: 5px;
+  border-radius: 10px;
   background-color: transparent;
   color: inherit;
   margin-left: 3px;
