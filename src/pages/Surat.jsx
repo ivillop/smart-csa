@@ -23,7 +23,7 @@ function Surat() {
       <div className='surat-header'>
         <h1>List Surat</h1>
         <div className='add-surat'>
-          <Link className='add-button' to='/addsurat'>
+          <Link className='add-button' to='/add-surat'>
             <FaPlus />
             <p>Tambah Surat</p>
           </Link>

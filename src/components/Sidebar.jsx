@@ -4,7 +4,6 @@ import {
   FaTicket,
   FaRegFolderOpen,
   FaRegEnvelope,
-  FaRegUser,
 } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
@@ -39,12 +38,6 @@ function Sidebar() {
             <FaRegEnvelope />
             Agenda Acara
           </Link>
-        </li>
-        <li>
-          <a href='#'>
-            <FaRegUser />
-            Admin
-          </a>
         </li>
       </ul>
     </aside>

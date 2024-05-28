@@ -16,6 +16,7 @@ function Dashboard() {
         search: '_INPUT_',
         searchPlaceholder: 'Search',
       },
+      pageLength: 5,
     });
 
     // Cleanup on component unmount
