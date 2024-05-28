@@ -3,6 +3,10 @@ h1 {
   font-size: 22px !important;
 }
 
+a {
+  color: #000 !important;
+}
+
 aside {
   width: 20%;
   height: 100vh;
