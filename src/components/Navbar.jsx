@@ -44,10 +44,10 @@ function Navbar() {
                 className='mt-2 text-end w-32 origin-top-right shadow px-0.5 rounded border-black/5 bg-white hover:bg-gray-100 p-1 text-sm/6 text-white [--anchor-gap:var(--spacing-1)] focus:outline-none'>
                 <MenuItem>
                   <a
-                    className='flex text-black items-center justify-center gap-4'
+                    className='flex text-black items-center justify-start px-2 gap-3'
                     href='#'>
-                    Log Out
                     <FaRightFromBracket />
+                    Logout
                   </a>
                 </MenuItem>
               </MenuItems>

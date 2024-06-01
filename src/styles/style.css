@@ -28,7 +28,6 @@ aside img {
 aside ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 aside li a {
@@ -40,8 +39,16 @@ aside li a {
 }
 
 aside li a:hover {
-  background-color: #87c0f3;
+  color: #007ded;
   transition: all 0.2s ease-in-out;
+}
+
+aside li a:active {
+  color: #007ded;
+}
+
+aside li a:focus {
+  color: #007ded;
 }
 
 li i {
@@ -50,7 +57,7 @@ li i {
 
 nav {
   padding-top: 1rem;
-  margin-left: 23%;
+  margin-left: 20%;
   display: flex;
   justify-content: space-between;
   padding-right: 2rem;
@@ -314,4 +321,150 @@ main {
   padding-inline: 0.8rem;
   border-radius: 20px;
   background-color: transparent;
+}
+
+.add-surat__page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-surat__page input[type='text'],
+textarea {
+  border: 1px solid #606060;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #fbfbfb;
+}
+
+.add-surat__page input[type='file'] {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fbfbfb;
+  border: 1px solid;
+}
+
+.add-surat__page button {
+  background-color: #007ded;
+  color: #ffffff;
+  padding: 0.5rem;
+  width: 8rem;
+  border-radius: 5px;
+}
+
+.add-surat__page button:hover {
+  background-color: #1c95ff;
+  transition: all 0.1s ease-in-out;
+}
+
+.add-surat__page input[type='file']::-webkit-file-upload-button {
+  padding: 0.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.add-surat__page textarea {
+  height: 150px;
+  resize: none;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d5d5;
+}
+
+.login-page form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 4px 5px 16px 0px;
+  width: 30vw;
+}
+
+.login-page h2 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.login-page__email,
+.login-page__password {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.login-page__email input,
+.login-page__password input {
+  padding-inline: 0.5rem;
+  padding-block: 0.4rem;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+
+.login-page button {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid;
+  padding-block: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ea5f76;
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8d5d5;
+}
+
+.register-page form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 4px 5px 16px 0px;
+  width: 30vw;
+}
+
+.register-page h2 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.register-page__email,
+.register-page__password {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.register-page__email input,
+.register-page__password input {
+  padding-inline: 0.5rem;
+  padding-block: 0.4rem;
+  border: 1px solid #c5c5c5;
+  border-radius: 5px;
+}
+
+.register-page button {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid;
+  padding-block: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ea5f76;
 }
