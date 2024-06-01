@@ -1,5 +1,5 @@
 import profile from '../assets/profile.png';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import {
   Menu,
   MenuButton,
@@ -43,12 +43,12 @@ function Navbar() {
                 anchor='bottom end'
                 className='mt-2 text-end w-32 origin-top-right shadow px-0.5 rounded border-black/5 bg-white hover:bg-gray-100 p-1 text-sm/6 text-white [--anchor-gap:var(--spacing-1)] focus:outline-none'>
                 <MenuItem>
-                  <a
+                  <Link
                     className='flex text-black items-center justify-start px-2 gap-3'
-                    href='#'>
+                    to='/login'>
                     <FaRightFromBracket />
                     Logout
-                  </a>
+                  </Link>
                 </MenuItem>
               </MenuItems>
             </Transition>

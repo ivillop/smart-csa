@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Register() {
   const [email, setEmail] = useState('');
@@ -37,6 +37,9 @@ function Register() {
             />
           </div>
           <button type='submit'>Register</button>
+          <Link className='register-page__appeal' to='/login'>
+            Sudah punya akun? Masuk sekarang
+          </Link>
         </form>
       </div>
     </>

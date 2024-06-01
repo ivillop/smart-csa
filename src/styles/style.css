@@ -57,7 +57,7 @@ li i {
 
 nav {
   padding-top: 1rem;
-  margin-left: 20%;
+  margin-left: 21%;
   display: flex;
   justify-content: space-between;
   padding-right: 2rem;
@@ -383,8 +383,9 @@ textarea {
 
 .login-page form {
   background-color: #fff;
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 2rem;
+  padding-block: 4rem;
+  border-radius: 20px;
   box-shadow: 4px 5px 16px 0px;
   width: 30vw;
 }
@@ -419,6 +420,12 @@ textarea {
   font-weight: 600;
   color: #fff;
   background-color: #ea5f76;
+  margin-bottom: 1rem;
+}
+
+.login-page__appeal {
+  display: flex;
+  justify-content: center;
 }
 
 .register-page {
@@ -431,8 +438,9 @@ textarea {
 
 .register-page form {
   background-color: #fff;
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 2rem;
+  padding-block: 4rem;
+  border-radius: 20px;
   box-shadow: 4px 5px 16px 0px;
   width: 30vw;
 }
@@ -467,4 +475,10 @@ textarea {
   font-weight: 600;
   color: #fff;
   background-color: #ea5f76;
+  margin-bottom: 1rem;
+}
+
+.register-page__appeal {
+  display: flex;
+  justify-content: center;
 }
